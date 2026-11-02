@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 112" role="img" aria-labelledby="title">
+  <title id="title">ORVYN</title>
+  <g fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M20 56C20 29 36 16 62 16s42 13 42 40-16 40-42 40-42-13-42-40Z"/>
+    <path d="M137 96V16h34c24 0 37 10 37 28 0 17-13 27-37 27h-34m42 0 35 25"/>
+    <path d="m237 16 36 80 36-80"/>
+    <path d="m330 16 35 44 35-44m-35 44v36"/>
+    <path d="M432 96V16l74 80V16"/>
+  </g>
+  <path d="M268 43h10l-5 12Z" fill="currentColor"/>
+  <path d="M360 55h10l-5 10Z" fill="currentColor"/>
+</svg>

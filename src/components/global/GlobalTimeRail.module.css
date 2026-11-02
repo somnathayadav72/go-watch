@@ -1,0 +1,36 @@
+.rail {
+  position: fixed;
+  z-index: 60;
+  top: 50%;
+  right: 20px;
+  display: flex;
+  height: min(58vh, 540px);
+  transform: translateY(-50%);
+  align-items: center;
+  gap: 12px;
+  color: currentColor;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.label,
+.end {
+  color: #fff;
+  font: 700 .58rem/1 var(--font-tech);
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+.track { position: relative; width: 1px; height: 100%; background: rgba(255,255,255,.28); }
+.track i { position: absolute; right: -2px; width: 5px; height: 1px; background: rgba(255,255,255,.42); }
+.progress { position: absolute; inset: 0; background: #fff; transform-origin: top; box-shadow: 0 0 0 1px rgba(0,0,0,.1); }
+.mobileProgress { display: none; }
+
+@media (max-width: 767px) {
+  .rail { top: auto; right: 0; bottom: 0; left: 0; width: 100%; height: 3px; transform: none; display: block; }
+  .track { width: 100%; height: 3px; }
+  .track i, .label, .end { display: none; }
+  .desktopProgress { display: none; }
+  .mobileProgress { display: block; transform-origin: left; }
+}

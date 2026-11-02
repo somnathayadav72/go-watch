@@ -1,0 +1,49 @@
+.hero { position: relative; z-index: 1; height: 170vh; min-height: 1050px; background: #090A0C; color: #FAF8F4; }
+.sticky { position: sticky; top: 0; overflow: hidden; height: 100svh; min-height: 620px; isolation: isolate; }
+.topLabel { position: absolute; z-index: 8; top: 96px; left: var(--page-gutter); display: flex; gap: 32px; color: #b5b7bc; font: 700 .63rem/1 var(--font-tech); letter-spacing: .16em; }
+.giantDial { position: absolute; z-index: -1; top: 50%; left: 50%; width: min(82vw, 940px); aspect-ratio: 1; translate: -50% -50%; border: clamp(6px,1vw,14px) solid #272a2f; border-radius: 50%; background: radial-gradient(circle at 38% 34%, #282b30 0, #111318 45%, #07080a 100%); box-shadow: inset 0 0 0 1px rgba(255,255,255,.17), inset 0 0 80px #000, 0 55px 120px #000; }
+.ticks { position: absolute; inset: 0; }
+.ticks i { position: absolute; top: 2.8%; left: calc(50% - .5px); width: 1px; height: 2.5%; transform-origin: 50% 1880%; background: rgba(255,255,255,.42); }
+.ticks .major { width: 3px; height: 6%; transform-origin: 50% 805%; background: #f5f1e7; }
+.innerRing { position: absolute; inset: 14%; border: 1px solid rgba(255,255,255,.13); border-radius: 50%; }
+.hourHand,.minuteHand,.secondHand { position: absolute; z-index: 2; top: 50%; left: 50%; display: block; transform-origin: 50% 100%; border-radius: 99px; }
+.hourHand { width: 13px; height: 24%; margin: -24% 0 0 -6px; background: #d7d8d8; box-shadow: 0 4px 10px #000; }
+.minuteHand { width: 7px; height: 34%; margin: -34% 0 0 -3px; background: #e4e3df; box-shadow: 0 4px 10px #000; }
+.secondHand { width: 2px; height: 39%; margin: -39% 0 0 -1px; background: var(--signal); box-shadow: 0 2px 8px #000; }
+.pin { position: absolute; z-index: 3; top: 50%; left: 50%; width: 25px; height: 25px; transform: translate(-50%,-50%); border: 5px solid #d7d8d8; border-radius: 50%; background: var(--signal); }
+.crown { position: absolute; top: 44%; right: -8.5%; width: 9%; height: 12%; border: 5px solid #676a70; background: repeating-linear-gradient(90deg,#2c2f34 0 4px,#5d6065 4px 6px); border-radius: 5px 15px 15px 5px; }
+.heroHeadline { position: absolute; z-index: 4; inset: 0; display: grid; place-items: center; text-align: center; pointer-events: none; }
+.heroHeadline h1 { margin: 0; font: 400 clamp(4.2rem,11vw,11rem)/.82 var(--font-display); letter-spacing: -.065em; }
+.heroHeadline h1 span { display: block; }
+.fullWatch { position: absolute; z-index: 5; top: 5%; right: 8%; bottom: 2%; left: 35%; display: grid; place-items: center; transform-origin: center; }
+.fullWatch img { position: relative; z-index: 2; width: min(70vh, 680px); height: auto; object-fit: contain; filter: drop-shadow(0 28px 48px rgba(0,0,0,.62)); }
+.shadow { position: absolute; z-index: 1; bottom: 10%; width: 54%; height: 8%; border-radius: 50%; background: rgba(0,0,0,.72); filter: blur(22px); }
+.finalCopy { position: absolute; z-index: 7; bottom: 7.5vh; left: var(--page-gutter); display: grid; gap: 26px; }
+.finalCopy p { display: grid; gap: 6px; margin: 0; font: 600 clamp(1.3rem,2.2vw,2.45rem)/1 var(--font-tech); letter-spacing: -.03em; }
+.finalCopy a { display: inline-flex; width: max-content; min-height: 48px; align-items: center; gap: 16px; border-bottom: 1px solid rgba(255,255,255,.5); font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.heroWordmark { position: absolute; z-index: 2; right: -2vw; bottom: -1.8vw; color: rgba(255,255,255,.05); font: 700 clamp(7rem,22vw,24rem)/.7 var(--font-body); letter-spacing: -.08em; pointer-events: none; }
+
+@media (max-width: 1099px) {
+  .fullWatch { right: -5%; left: 28%; }
+  .topLabel { top: 84px; }
+}
+
+@media (max-width: 767px) {
+  .hero { height: 135vh; min-height: 900px; }
+  .sticky { min-height: 600px; }
+  .topLabel { top: 84px; right: var(--page-gutter); justify-content: space-between; gap: 10px; }
+  .topLabel span:last-child { display: none; }
+  .giantDial { width: 118vw; }
+  .heroHeadline { align-items: start; padding-top: 25vh; }
+  .heroHeadline h1 { font-size: clamp(4rem,19vw,6.6rem); text-align: left; }
+  .fullWatch { top: 12%; right: -20%; bottom: 10%; left: -8%; align-items: center; }
+  .fullWatch img { width: min(83vh, 116vw); }
+  .finalCopy { right: var(--page-gutter); bottom: 9vh; }
+  .finalCopy p { font-size: 1.08rem; }
+  .heroWordmark { right: auto; bottom: 0; left: -3vw; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero { height: 100svh; min-height: 680px; }
+  .fullWatch { opacity: 1; }
+}

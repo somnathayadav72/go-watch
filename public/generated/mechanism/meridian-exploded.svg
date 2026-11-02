@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Exploded fictional ORVYN Meridian watch mechanism">
+  <defs><radialGradient id="m"><stop stop-color="#f5f1e8"/><stop offset="1" stop-color="#a6a8ab"/></radialGradient></defs>
+  <g fill="none" stroke="#C7A26A"><ellipse cx="600" cy="130" rx="250" ry="58"/><ellipse cx="600" cy="240" rx="230" ry="55"/><ellipse cx="600" cy="360" rx="210" ry="50"/><ellipse cx="600" cy="505" rx="190" ry="48"/><ellipse cx="600" cy="665" rx="225" ry="55"/></g>
+  <g fill="url(#m)" stroke="#2B2C30"><circle cx="600" cy="360" r="190" opacity=".86"/><circle cx="600" cy="505" r="168" opacity=".92"/><path d="M442 485 758 525M470 430l260 145M510 390l180 230" opacity=".5"/></g>
+  <g stroke="#F2EEE7" stroke-width="8" stroke-linecap="round"><path d="M600 360 525 300"/><path d="M600 360 670 265"/></g>
+  <g fill="#F2EEE7" font-family="Arial,sans-serif" font-size="18" letter-spacing="3"><text x="890" y="138">01 / CRYSTAL</text><text x="890" y="248">02 / HANDS</text><text x="890" y="368">03 / DIAL</text><text x="890" y="513">04 / MOVEMENT</text><text x="890" y="673">05 / CASEBACK</text></g>
+  <g stroke="#F2EEE7" opacity=".35"><path d="M845 130H710M845 240H730M845 360H810M845 505H768M845 665H825"/></g>
+</svg>
